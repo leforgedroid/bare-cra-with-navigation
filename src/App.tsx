@@ -11,9 +11,10 @@ import { About } from "./pages/about";
 import { Users } from "./pages/users";
 
 const App: FunctionComponent = () => {
+  const classes = useStyles();
   return (
     <Router>
-      <div>
+      <div className={classes.container}>
         <Header />
         <Switch>
           <Route path="/about">
@@ -31,4 +32,10 @@ const App: FunctionComponent = () => {
   );
 };
 
+const useStyles = makeStyles({
+  container: {
+    background: "linear-gradient(45deg, #CDE0C9 30%, #2C6975 90%)",
+    height: "100vh"
+  }
+});
 export default App;

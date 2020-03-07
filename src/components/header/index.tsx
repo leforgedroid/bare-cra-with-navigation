@@ -10,17 +10,21 @@ export const Header: FunctionComponent = () => {
     <Grid
       container
       direction="row"
-      // className={classes.headerContainer}
+      //className={classes.headerContainer}
       wrap={"nowrap"}
     >
       <div className={classes.container}>
-        <svg viewBox="0 50 500 500" className={classes.svg}>
-          <path
-            d="M0,55 C150,200 400,0 500,100 L500,00 L0,0"
-            style={{
-              fill: "#2C6975"
-            }}
-          ></path>
+        <svg viewBox="0 0 515 200" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <title>Layer 1</title>
+            <path
+              id="svg_8"
+              d="m-0.195014,-107.438008c193.666686,-97.587646 387.333333,97.587639 580.99998,0l0,175.657734c-193.666647,97.587654 -387.333294,-97.587631 -580.99998,0l0,-175.657734z"
+              fill-opacity="50%"
+              fill="#fff"
+              preserveAspectRatio="none meet"
+            />
+          </g>
         </svg>
       </div>
       <Grid item>
@@ -55,12 +59,12 @@ export const Header: FunctionComponent = () => {
 const useStyles = makeStyles({
   headerContainer: {
     textDecoration: "none",
-    background: "linear-gradient(45deg, #CDE0C9 30%, #2C6975 90%)",
+    // background: "linear-gradient(45deg, #CDE0C9 30%, #2C6975 90%)",
     padding: "5px 0 5px 0"
     // boxShadow: "0 3px 5px 2px rgba(200, 200, 200, .3)"
   },
   headerLink: {
-    color: "#ffffff",
+    color: "#000000",
     padding: "0 20px"
   },
   svg: {
@@ -71,14 +75,14 @@ const useStyles = makeStyles({
     left: 0
   },
   container: {
-    background: "linear-gradient(45deg, #CDE0C9 30%, #2C6975 90%)",
+    // background: "linear-gradient(45deg, #CDE0C9 30%, #2C6975 90%)",
     display: "inline-block",
     position: "absolute",
     width: "100%",
-    height: "10px",
+    height: "400px",
     paddingBottom: "100%",
     verticalAlign: "middle",
     overflow: "hidden",
-    zIndex: -20
+    zIndex: 0
   }
 });
